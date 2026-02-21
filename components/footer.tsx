@@ -35,7 +35,6 @@ export default function Footer() {
           {[
             { label: 'Documentação', href: 'https://api.voxa.ai/api/docs' },
             { label: 'Swagger', href: 'https://api.voxa.ai/api/docs' },
-            { label: 'GitHub', href: 'https://github.com/AndreClawdTeam/voxa-web' },
           ].map((link) => (
             <a
               key={link.label}
