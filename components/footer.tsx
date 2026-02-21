@@ -15,10 +15,12 @@ export default function Footer() {
         {/* Logo */}
         <div className="flex items-center gap-2">
           <div
-            className="w-7 h-7 rounded-lg flex items-center justify-center"
+            className="relative w-7 h-7 rounded-lg"
             style={{ background: 'var(--accent-primary)' }}
           >
-            <Waveform size="sm" barColor="#fff" animated={false} />
+            <div className="absolute inset-1.5">
+              <Waveform size="logo" barColor="#fff" animated={false} />
+            </div>
           </div>
           <span className="font-bold text-sm" style={{ color: 'var(--text-primary)' }}>
             Voxa API

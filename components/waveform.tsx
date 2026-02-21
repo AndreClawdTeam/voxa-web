@@ -7,7 +7,7 @@ interface WaveformProps {
   className?: string
   barColor?: string
   animated?: boolean
-  size?: 'sm' | 'md' | 'lg' | 'hero'
+  size?: 'sm' | 'md' | 'lg' | 'hero' | 'logo'
 }
 
 const barHeights: Record<string, number[]> = {
@@ -17,12 +17,57 @@ const barHeights: Record<string, number[]> = {
   hero: [20, 50, 35, 70, 45, 90, 30, 65, 80, 40, 55, 25, 75, 50, 60, 35, 85, 45, 30, 70, 55, 40, 65, 50],
 }
 
+// Logo size: heights as % of container (relative, never px)
+const logoBarPercents = [35, 70, 50, 90, 60, 100, 45]
+
 export default function Waveform({
   className = '',
   barColor = 'var(--accent-bright)',
   animated = true,
   size = 'md',
 }: WaveformProps) {
+
+  // Logo mode: fills parent container using relative sizing
+  if (size === 'logo') {
+    return (
+      <div
+        className={`flex items-end justify-around w-full h-full ${className}`}
+        aria-hidden="true"
+      >
+        {logoBarPercents.map((pct, i) => (
+          <motion.div
+            key={i}
+            className="flex-1 rounded-full mx-[3%]"
+            style={{
+              backgroundColor: barColor,
+              height: `${pct}%`,
+              opacity: 0.9,
+              transformOrigin: 'bottom center',
+            }}
+            animate={
+              animated
+                ? {
+                    scaleY: [1, 0.3 + (i % 3) * 0.2, 0.8, 0.2 + (i % 4) * 0.2, 1],
+                    opacity: [0.9, 0.5, 1, 0.6, 0.9],
+                  }
+                : undefined
+            }
+            transition={
+              animated
+                ? {
+                    duration: 1.2 + (i % 5) * 0.3,
+                    repeat: Infinity,
+                    ease: 'easeInOut',
+                    delay: i * 0.08,
+                  }
+                : undefined
+            }
+          />
+        ))}
+      </div>
+    )
+  }
+
   const heights = barHeights[size]
 
   return (

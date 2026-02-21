@@ -39,10 +39,12 @@ export default function Navbar() {
             {/* Logo */}
             <a href="/" className="flex items-center gap-2 group">
               <div
-                className="w-8 h-8 rounded-lg flex items-center justify-center"
+                className="relative w-8 h-8 rounded-lg"
                 style={{ background: 'var(--accent-primary)' }}
               >
-                <Waveform size="sm" barColor="#fff" animated={true} />
+                <div className="absolute inset-1.5">
+                  <Waveform size="logo" barColor="#fff" animated={true} />
+                </div>
               </div>
               <span
                 className="font-bold text-lg tracking-tight"
