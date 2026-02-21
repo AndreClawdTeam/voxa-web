@@ -59,6 +59,13 @@ export default function ComparisonTable() {
         </motion.div>
 
         {/* Table wrapper — scroll horizontal no mobile */}
+        <div className="relative">
+          {/* Scroll hint gradient (mobile only) */}
+          <div
+            className="absolute top-0 right-0 bottom-0 w-10 pointer-events-none z-10 rounded-r-2xl sm:hidden"
+            style={{ background: 'linear-gradient(to right, transparent, var(--bg-base) 90%)' }}
+            aria-hidden="true"
+          />
         <motion.div
           className="overflow-x-auto rounded-2xl"
           style={{ border: '1px solid var(--border)' }}
@@ -157,6 +164,7 @@ export default function ComparisonTable() {
             </tbody>
           </table>
         </motion.div>
+        </div>{/* end relative wrapper */}
       </div>
     </section>
   )

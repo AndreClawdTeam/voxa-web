@@ -35,7 +35,7 @@ export default function Hero() {
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center text-center">
         {/* Badge */}
         <motion.div
-          className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-semibold mb-8"
+          className="inline-flex flex-wrap items-center justify-center gap-2 px-3 py-1.5 rounded-full text-xs font-semibold mb-8 max-w-full text-center"
           style={{
             background: 'rgba(124,58,237,0.15)',
             border: '1px solid rgba(124,58,237,0.3)',
@@ -78,7 +78,7 @@ export default function Hero() {
 
         {/* CTAs */}
         <motion.div
-          className="flex flex-col sm:flex-row gap-4 mt-10"
+          className="flex flex-col sm:flex-row gap-4 mt-10 w-full sm:w-auto"
           variants={fadeUp}
           initial="hidden"
           animate="visible"
@@ -86,7 +86,7 @@ export default function Hero() {
         >
           <motion.a
             href="#"
-            className="px-7 py-3.5 rounded-xl font-semibold text-white text-base"
+            className="w-full sm:w-auto px-7 py-3.5 rounded-xl font-semibold text-white text-base"
             style={{
               background: 'var(--accent-primary)',
               boxShadow: '0 0 30px rgba(124,58,237,0.4)',
@@ -106,7 +106,7 @@ export default function Hero() {
 
           <motion.a
             href="https://api.voxa.ai/api/docs"
-            className="px-7 py-3.5 rounded-xl font-semibold text-sm"
+            className="w-full sm:w-auto px-7 py-3.5 rounded-xl font-semibold text-sm"
             style={{
               border: '1px solid var(--border-accent)',
               color: 'var(--accent-glow)',
