@@ -45,7 +45,7 @@ export default function CodeSnippet() {
         </p>
         <p className="ml-4">
           <span style={{ color: '#f8fafc' }}>-F </span>
-          <span style={{ color: '#fbbf24' }}>&quot;file=@entrevista.mp3&quot;</span>
+          <span style={{ color: '#fbbf24' }}>&quot;audio=@entrevista.mp3&quot;</span>
         </p>
 
         <p className="mt-4" style={{ color: '#6b7280' }}># Resposta:</p>
@@ -55,19 +55,19 @@ export default function CodeSnippet() {
           <span style={{ color: '#f8fafc' }}>: {'{'}</span>
         </p>
         <p className="ml-8">
-          <span style={{ color: '#fbbf24' }}>&quot;text&quot;</span>
+          <span style={{ color: '#fbbf24' }}>&quot;transcribedText&quot;</span>
           <span style={{ color: '#f8fafc' }}>: </span>
           <span style={{ color: '#34d399' }}>&quot;Olá, bem-vindo à reunião de hoje...&quot;</span>
           <span style={{ color: '#f8fafc' }}>,</span>
         </p>
         <p className="ml-8">
-          <span style={{ color: '#fbbf24' }}>&quot;language&quot;</span>
+          <span style={{ color: '#fbbf24' }}>&quot;detectedLanguage&quot;</span>
           <span style={{ color: '#f8fafc' }}>: </span>
           <span style={{ color: '#34d399' }}>&quot;pt&quot;</span>
           <span style={{ color: '#f8fafc' }}>,</span>
         </p>
         <p className="ml-8">
-          <span style={{ color: '#fbbf24' }}>&quot;duration&quot;</span>
+          <span style={{ color: '#fbbf24' }}>&quot;audioDurationSeconds&quot;</span>
           <span style={{ color: '#f8fafc' }}>: </span>
           <span style={{ color: '#60a5fa' }}>142.3</span>
         </p>

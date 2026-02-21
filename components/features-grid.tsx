@@ -12,7 +12,7 @@ const features = [
   {
     icon: '📁',
     title: '6 formatos suportados',
-    description: 'MP3, WAV, OGG, MP4/M4A, FLAC, WEBM. Até 5 minutos de áudio por request.',
+    description: 'MP3, WAV, OGG, MP4/M4A, FLAC, WEBM. Até 25MB por arquivo por request.',
     size: 'normal',
   },
   {

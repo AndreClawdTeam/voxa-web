@@ -23,7 +23,7 @@ const faqs = [
   {
     question: 'Qual é o tamanho máximo de arquivo?',
     answer:
-      'Até 5 minutos de áudio por request. Se seu caso de uso exige arquivos maiores, considere dividir em segmentos menores antes de enviar.',
+      'Até 25MB por arquivo por request. Não há limite de duração — o limite é de tamanho. Se seu caso de uso exige arquivos maiores, considere dividir em segmentos antes de enviar.',
   },
   {
     question: 'Quais idiomas são suportados?',
