@@ -61,12 +61,6 @@ export default function CodeSnippet() {
           <span style={{ color: '#f8fafc' }}>,</span>
         </p>
         <p className="ml-8">
-          <span style={{ color: '#fbbf24' }}>&quot;detectedLanguage&quot;</span>
-          <span style={{ color: '#f8fafc' }}>: </span>
-          <span style={{ color: '#34d399' }}>&quot;pt&quot;</span>
-          <span style={{ color: '#f8fafc' }}>,</span>
-        </p>
-        <p className="ml-8">
           <span style={{ color: '#fbbf24' }}>&quot;audioDurationSeconds&quot;</span>
           <span style={{ color: '#f8fafc' }}>: </span>
           <span style={{ color: '#60a5fa' }}>142.3</span>

@@ -3,7 +3,6 @@
 import { motion } from 'framer-motion'
 
 const techs = [
-  { name: 'OpenAI Whisper', icon: '🤖' },
   { name: 'Node.js', icon: '⬢' },
   { name: 'TypeScript', icon: '𝕋𝕊' },
   { name: 'PostgreSQL', icon: '🐘' },

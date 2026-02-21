@@ -6,7 +6,7 @@ const features = [
   {
     icon: '🎯',
     title: 'Alta precisão',
-    description: 'Motor faster-whisper — a versão otimizada do Whisper da OpenAI. Qualidade de transcrição de nível enterprise.',
+    description: 'Motor faster-whisper — transcrição de áudio em português com alta precisão e baixa latência.',
     size: 'large',
   },
   {
@@ -16,9 +16,9 @@ const features = [
     size: 'normal',
   },
   {
-    icon: '🌍',
-    title: 'Multilíngue',
-    description: 'Detecção automática de idioma. PT, EN, ES, FR, DE, IT e muito mais.',
+    icon: '🇧🇷',
+    title: 'Português nativo',
+    description: 'Otimizado para Português Brasileiro. Alta precisão em sotaques regionais, termos técnicos e vocabulário do dia a dia.',
     size: 'normal',
   },
   {

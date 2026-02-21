@@ -28,7 +28,7 @@ const faqs = [
   {
     question: 'Quais idiomas são suportados?',
     answer:
-      'O motor faster-whisper detecta o idioma automaticamente. Suporte principal para PT, EN, ES, FR, DE, IT. Suporte parcial para dezenas de outros idiomas — o modelo identifica e transcreve sem configuração extra.',
+      'A API é focada em Português Brasileiro. Não há detecção automática de idioma — o motor é otimizado para PT-BR, oferecendo alta precisão em sotaques regionais, termos técnicos e vocabulário do dia a dia.',
   },
 ]
 
