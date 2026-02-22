@@ -20,6 +20,16 @@ const barHeights: Record<string, number[]> = {
 // Logo size: heights as % of container (relative, never px)
 const logoBarPercents = [35, 70, 50, 90, 60, 100, 45]
 
+// Pre-computed deterministic scaleY values to avoid Math.random() in render
+// Each entry is [1, scaleA, 0.8, scaleB, 1] for a bar at index i
+const BAR_SCALE_VALUES = Array.from({ length: 30 }, (_, i) => [
+  1,
+  0.3 + ((i * 17 + 7) % 11) / 11 * 0.7,
+  0.8,
+  0.2 + ((i * 13 + 5) % 9) / 9 * 0.8,
+  1,
+])
+
 export default function Waveform({
   className = '',
   barColor = 'var(--accent-bright)',
@@ -88,7 +98,7 @@ export default function Waveform({
           animate={
             animated
               ? {
-                  scaleY: [1, 0.3 + Math.random() * 0.7, 0.8, 0.2 + Math.random() * 0.8, 1],
+                  scaleY: BAR_SCALE_VALUES[i % BAR_SCALE_VALUES.length],
                   opacity: [0.7, 0.4, 0.9, 0.5, 0.7],
                 }
               : undefined

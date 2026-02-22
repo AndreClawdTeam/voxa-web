@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Menu, X } from 'lucide-react'
+import Link from 'next/link'
 import Waveform from './waveform'
 
 export default function Navbar() {
@@ -17,7 +18,7 @@ export default function Navbar() {
 
   const navLinks = [
     { label: 'Pricing', href: '#pricing' },
-    { label: 'Docs', href: 'https://api.voxa.ai/api/docs' },
+    { label: 'Docs', href: 'http://138.197.19.184:3000/api/docs/' },
   ]
 
   return (
@@ -37,7 +38,7 @@ export default function Navbar() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
-            <a href="/" className="flex items-center gap-2 group">
+            <Link href="/" className="flex items-center gap-2 group">
               <div
                 className="relative w-8 h-8 rounded-lg"
                 style={{ background: 'var(--accent-primary)' }}
@@ -52,7 +53,7 @@ export default function Navbar() {
               >
                 Voxa
               </span>
-            </a>
+            </Link>
 
             {/* Desktop nav */}
             <div className="hidden md:flex items-center gap-8">
@@ -74,7 +75,7 @@ export default function Navbar() {
               ))}
 
               <motion.a
-                href="#"
+                href="https://voxa-dashboard.vercel.app/register"
                 className="px-4 py-2 rounded-lg text-sm font-semibold text-white"
                 style={{
                   background: 'var(--accent-primary)',
@@ -159,7 +160,7 @@ export default function Navbar() {
                   </a>
                 ))}
                 <a
-                  href="#"
+                  href="https://voxa-dashboard.vercel.app/register"
                   className="mt-4 py-3 px-4 rounded-lg font-semibold text-sm text-white text-center"
                   style={{ background: 'var(--accent-primary)' }}
                   onClick={() => setMenuOpen(false)}

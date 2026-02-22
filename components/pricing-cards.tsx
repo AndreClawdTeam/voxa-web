@@ -18,7 +18,7 @@ const tiers = [
       'Otimizado para Português',
     ],
     cta: 'Começar grátis →',
-    ctaHref: '#',
+    ctaHref: 'https://voxa-dashboard.vercel.app/register',
   },
   {
     name: 'Basic',
@@ -35,7 +35,7 @@ const tiers = [
       'Histórico completo',
     ],
     cta: 'Assinar Basic →',
-    ctaHref: '#',
+    ctaHref: 'https://voxa-dashboard.vercel.app/register',
   },
   {
     name: 'Pro',
@@ -53,7 +53,7 @@ const tiers = [
       'Suporte prioritário',
     ],
     cta: 'Assinar Pro →',
-    ctaHref: '#',
+    ctaHref: 'https://voxa-dashboard.vercel.app/register',
   },
 ]
 

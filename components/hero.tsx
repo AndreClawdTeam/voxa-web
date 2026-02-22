@@ -85,7 +85,7 @@ export default function Hero() {
 					transition={{ duration: 0.6, delay: 0.4 }}
 				>
 					<motion.a
-						href="#"
+						href="https://voxa-dashboard.vercel.app/register"
 						className="w-full sm:w-auto px-7 py-3.5 rounded-xl font-semibold text-white text-base"
 						style={{
 							background: "var(--accent-primary)",
@@ -105,7 +105,7 @@ export default function Hero() {
 					</motion.a>
 
 					<motion.a
-						href="https://api.voxa.ai/api/docs"
+						href="http://138.197.19.184:3000/api/docs/"
 						className="w-full sm:w-auto px-7 py-3.5 rounded-xl font-semibold text-sm"
 						style={{
 							border: "1px solid var(--border-accent)",
