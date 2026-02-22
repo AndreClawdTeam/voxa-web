@@ -58,7 +58,7 @@ export default function CTABanner() {
           transition={{ duration: 0.55, delay: 0.24 }}
         >
           <motion.a
-            href="#"
+            href="https://voxa-dashboard.vercel.app/register"
             className="inline-flex items-center px-8 py-4 rounded-xl font-bold text-white text-base"
             style={{
               background: 'var(--accent-primary)',

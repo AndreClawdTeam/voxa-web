@@ -33,8 +33,8 @@ export default function Footer() {
         {/* Links */}
         <nav className="flex items-center gap-6">
           {[
-            { label: 'Documentação', href: 'https://api.voxa.ai/api/docs' },
-            { label: 'Swagger', href: 'https://api.voxa.ai/api/docs' },
+            { label: 'Documentação', href: 'http://138.197.19.184:3000/api/docs/' },
+            { label: 'Swagger', href: 'http://138.197.19.184:3000/api/docs/' },
           ].map((link) => (
             <a
               key={link.label}
