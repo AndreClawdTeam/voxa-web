@@ -75,7 +75,7 @@ export default function Navbar() {
               ))}
 
               <motion.a
-                href="https://voxa-dashboard.vercel.app/register"
+                href="https://voxa-dashboard.vercel.app/login"
                 className="px-4 py-2 rounded-lg text-sm font-semibold text-white"
                 style={{
                   background: 'var(--accent-primary)',
@@ -160,7 +160,7 @@ export default function Navbar() {
                   </a>
                 ))}
                 <a
-                  href="https://voxa-dashboard.vercel.app/register"
+                  href="https://voxa-dashboard.vercel.app/login"
                   className="mt-4 py-3 px-4 rounded-lg font-semibold text-sm text-white text-center"
                   style={{ background: 'var(--accent-primary)' }}
                   onClick={() => setMenuOpen(false)}
